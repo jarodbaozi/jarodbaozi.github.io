@@ -1,0 +1,197 @@
+@-ms-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
+/* Reset styles */
+/* line 22, ../sass/screen.scss */
+*,
+*:before,
+*:after {
+  margin: 0px;
+  padding: 0px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 30, ../sass/screen.scss */
+header,
+main,
+section,
+aside,
+nav,
+article,
+footer {
+  display: block;
+}
+
+/* line 40, ../sass/screen.scss */
+html {
+  min-height: 100%;
+}
+
+/* line 44, ../sass/screen.scss */
+body {
+  min-height: 100%;
+  min-width: 320px;
+  background: #f4f2ec;
+  font-family: Arial;
+  font-size: 17px;
+  line-height: 1.6em;
+  color: #000000;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+/* line 59, ../sass/screen.scss */
+body.menu-opened {
+  overflow: hidden;
+}
+
+/* Change font-size globally depending on screen width */
+@media (min-width: 1200px) {
+  /* line 67, ../sass/screen.scss */
+  body {
+    font-size: 20px;
+  }
+}
+@media (max-width: 979px) {
+  /* line 73, ../sass/screen.scss */
+  body {
+    font-size: 15px;
+  }
+}
+@media (max-width: 640px) {
+  /* line 79, ../sass/screen.scss */
+  body {
+    font-size: 14px;
+  }
+}
+/* line 84, ../sass/screen.scss */
+img {
+  display: block;
+}
+
+/* line 88, ../sass/screen.scss */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* line 92, ../sass/screen.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for headers */
+/* line 99, ../sass/screen.scss */
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0px;
+  line-height: 1em;
+}
+/* line 108, ../sass/screen.scss */
+h1 span,
+h2 span,
+h3 span,
+h4 span {
+  font-family: Georgia;
+  font-weight: 900;
+  font-size: 0.95em;
+}
+
+/* Different header styles */
+/* line 117, ../sass/screen.scss */
+h1 {
+  font-size: 2.3em;
+}
+
+/* line 121, ../sass/screen.scss */
+h2 {
+  font-size: 1.8em;
+}
+
+/* line 125, ../sass/screen.scss */
+h3 {
+  font-size: 1.4em;
+}
+
+/* line 129, ../sass/screen.scss */
+p {
+  margin: 10px 0px;
+}
+
+/* table-layout may or may not be necessary */
+/* line 134, ../sass/screen.scss */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+/* line 140, ../sass/screen.scss */
+input {
+  cursor: pointer;
+}
+
+/* input placeholder */
+/* line 147, ../sass/screen.scss */
+::-webkit-input-placeholder {
+  color: #444444;
+  font-weight: normal;
+  -moz-transform: color 0.3s ease;
+  -ms-transform: color 0.3s ease;
+  -webkit-transform: color 0.3s ease;
+  transform: color 0.3s ease;
+}
+
+/* line 153, ../sass/screen.scss */
+:-moz-placeholder {
+  color: #444444;
+  font-weight: normal;
+}
+
+/* line 158, ../sass/screen.scss */
+::-moz-placeholder {
+  color: #444444;
+  font-weight: normal;
+}
+
+/* line 163, ../sass/screen.scss */
+:-ms-input-placeholder {
+  color: #444444;
+  font-weight: normal;
+}
+
+/* equal height columns with content centered */
+/* line 169, ../sass/screen.scss */
+.table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+/* line 174, ../sass/screen.scss */
+.table .cell {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+}
+
+.ajax-loader {
+  display: none!important;
+}
+
+textarea{
+  resize: none;
+}
+
+/* default button and possibly inverted button */
